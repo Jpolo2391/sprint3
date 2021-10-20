@@ -13,14 +13,17 @@
         <header class="cabecera">
 
             <div id="Logo-wrap">
-                <h1 id="Logo">Platycercus elegans</h1>
+                <a href="pagina.html"><h1 id="Logo">Platycercus elegans</h1></a>
             </div>
             <nav class="menu">
                 <ul>
-                    <li id="btn-inicio"><a href="pagina.html">Inicio </a></li>
+                    <li id="btn-inicio"><a href="Pagina.html">Inicio</a></li>
+                    <li id="btn-login"><a href="Pagina Login.html">Login</a></li>
                     <li id="btn-signup"><a href="Formulario de Registro.html">Sign up</a></li>
-                    <li id="btn-conocenos"><a href="conocenos.html">Conocenos </a></li>
-                    <li id="btn-contactanos"><a href="contactanos.html">Contactanos </a></li>
+                    <li id="btn-conocenos"><a href="conocenos.html">Conocenos</a></li>
+                    <li id="btn-contactanos"><a href="contactanos.html">Contactanos</a></li>
+                    <li id="btn-politica"><a href="politica de privacidad.html">Politica</a></li>
+                    <li id="btn-terminos"><a href="terminos.html">Terminos</a></li>
             </nav>
 
         </header>
@@ -30,16 +33,18 @@
             <article id="front-image">
                 <img src="Fondo.png">
             </article>
-            <article id="fpwrap">
+            <article class="fpwrap-general" id="fp-login">
 
                 <form id="formRegistro" method="GET" action="" onSubmit="return validar_formulario1();">
             <h1> Iniciar Sesion </h1>
             <br>
-            <label>Correo</label>
-            <input id="txtEmail" name="email" value="" type="email"  />
+            <input id="txtEmail" name="email" value="" type="email" placeholder="Email" />
             <br>
-            <label>Contraseña</label>
-            <input id="txtPassword" name="contrasena" value="" type="password" />
+            <input id="txtPassword" name="contrasena" value="" type="password" placeholder="Password" />
+            <br>
+            <input id="acepto-condiciones" name="condiciones" value="" type="checkbox" />
+            <br>
+            <label id="disclaimer">By signing up, I agreed to Platycercus elegan Terms of Service</label>
             <br>
             <label >Recordarme </label>
             <input name="recordar" value="H" type="radio" />

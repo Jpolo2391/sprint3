@@ -3,7 +3,7 @@
 <head>
 
     <title>Inicio de Sesion en Platycercus</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
     <link rel="stylesheet" href="estilo.css">
 
 </head>
@@ -13,14 +13,17 @@
         <header class="cabecera">
 
             <div id="Logo-wrap">
-                <h1 id="Logo">Platycercus elegans</h1>
+                <a href="pagina.html"><h1 id="Logo">Platycercus elegans</h1></a>
             </div>
             <nav class="menu">
                 <ul>
-                    <li id="btn-inicio"><a href="pagina.html">Inicio </a></li>
+                    <li id="btn-inicio"><a href="Pagina.html">Inicio</a></li>
                     <li id="btn-login"><a href="Pagina Login.html">Login</a></li>
-                    <li id="btn-conocenos"><a href="conocenos.html">Conocenos </a></li>
-                    <li id="btn-contactanos"><a href="contactanos.html">Contactanos </a></li>
+                    <li id="btn-signup"><a href="Formulario de Registro.html">Sign up</a></li>
+                    <li id="btn-conocenos"><a href="conocenos.html">Conocenos</a></li>
+                    <li id="btn-contactanos"><a href="contactanos.html">Contactanos</a></li>
+                    <li id="btn-politica"><a href="politica de privacidad.html">Politica</a></li>
+                    <li id="btn-terminos"><a href="terminos.html">Terminos</a></li>
                 </ul>
             </nav>
 
@@ -31,29 +34,24 @@
             <article id="front-image">
                 <img src="Fondo.png">
             </article>
-            <article id="fpwrap">
+            <article class="fpwrap-general" id="fpwrap">
 
                 <form id="formRegistro" method="GET" action="" onSubmit="return validar_formulario();">
-            <h1> Registro de Usuario </h1>
-            <br>
-            <label> Nombre </label>
-            <input id="txtNombre" name="nombre" value="" type="text" />
-            <br>
-            <label>Apellidos</label>
-            <input id="txtApellidos" name="apellidos" value="" type="text" />
-            <br>
-            <label>Correo</label>
-            <input id="txtEmail" name="email" value="" type="email"  />
-            <br>
-            <label>Contraseña</label>
-            <input id="txtPassword" name="contrasena" value="" type="password" />
-            <br>
-            <label>Confirmar Contraseña</label>
-            <input id="txtPassword1" name="contrasena" value="" type="password" />
-            <br>
-            <input class="boton" name="logiar" value="Enviar" type="submit" />
-            <p id="errores"></p>
-        </form>
+                    <h1 id="Lbl-Registro"> Registro de Usuario </h1>
+                    <br>
+                    <input id="txtNombre" name="nombre" value="" type="text" placeholder="Name"/>
+                    <br>
+                    <input id="txtApellidos" name="apellidos" value="" type="text" placeholder="Lastname" />
+                    <br>
+                    <input id="txtEmail" name="email" value="" type="email" placeholder="Email" />
+                    <br>
+                    <input id="txtPassword" name="contrasena" value="" type="password" placeholder="Password" />
+                    <br>
+                    <input id="txtPassword1" name="contrasena" value="" type="password" placeholder="Confirm Password"/>
+                    <br>
+                    <input class="boton" name="logiar" value="Enviar" type="submit" />
+                    <p id="errores"></p>
+                </form>
 
             </article>
         </section>

@@ -103,18 +103,19 @@ body {
 }
 
 #fpwrap {
-    position: relative;
-    height: 50px;
+    display: block;
+    width: 45%;
+    height: 600px;
     float: right;
-    width: 40%;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 1px;
 }
 
 #front-image {
     display: inline-block;
     width: 45%;
     height: auto;
+    margin-top: 1px;
 }
 
 img {
