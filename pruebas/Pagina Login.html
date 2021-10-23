@@ -2,6 +2,11 @@
 
 <head>
 
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Inicio de Sesion en Platycercus</title>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="estilo.css">
@@ -18,7 +23,7 @@
             <nav class="menu">
                 <ul>
                     <li id="btn-inicio"><a href="Pagina.html">Inicio</a></li>
-                    <li id="btn-login"><a href="Pagina Login.html">Login</a></li>
+                    <li id="btn-login"><button id="btn-abrir-popup" class="btn-abrir-popup">Login</button></li>
                     <li id="btn-signup"><a href="Formulario de Registro.html">Sign up</a></li>
                     <li id="btn-conocenos"><a href="conocenos.html">Conocenos</a></li>
                     <li id="btn-contactanos"><a href="contactanos.html">Contactanos</a></li>
@@ -35,7 +40,7 @@
             </article>
             <article class="fpwrap-general" id="fp-login">
 
-                <form id="formRegistro" method="GET" action="" onSubmit="return validar_formulario1();">
+            <form id="formRegistro" method="GET" action="" onSubmit="return validar_formulario1();">
             <h1> Iniciar Sesion </h1>
             <br>
             <input id="txtEmail" name="email" value="" type="email" placeholder="Email" />
@@ -53,9 +58,42 @@
 
             </article>
         </section>
+
+        <div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Iniciar Sesion</h3>
+				<!-- <h4>y recibe un cupon de descuento.</h4>-->
+				<form action="">
+					<div class="contenedor-inputs">
+                        <br>
+                        <input id="txtEmail" name="email" value="" type="email" placeholder="Email" />
+                        <br>
+                        <input id="txtPassword" name="contrasena" value="" type="password" placeholder="Password" />
+                        <br>
+                        <div id="forgot-password">
+                            <a id="disclaimer" href="">Forgot password?</a>
+                        </div><br>
+                        <div id="recordar">
+                            <input name="radio-recordar" value="H" type="checkbox"/>
+                            <p id="recordarme">  Recordarme</p><br><br>
+                        </div>
+                        
+                    <p id="errores"></p></div>
+                    <div id="footer-login">
+                        <input type="submit" class="btn-submit" value="Log in" name="logiar">
+                    </div><br>
+                    <div id="footer-signup">
+                        <label id="label-signup">Don't have an account?</label><label id="Registrarse"><a href="Formulario de Registro.html" id="signup"> Sign up</a></label>
+                    </div>
+					
+				</form>
+			</div>
+		</div>
+
     </div>
-
-
+    <script src="popup.js"></script>
+    
 </body>
 <script type="text/javascript" src="sprint3.js" ></script>
 </html>

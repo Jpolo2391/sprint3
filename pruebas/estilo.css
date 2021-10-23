@@ -10,7 +10,7 @@ body {
 
 h1 {
     text-align: center;
-    background-color: hsla(0, 0%, 93%);
+    background-color: rgba(0, 0, 0, 0);
     ;
     color: #0D3B66;
 }
@@ -145,6 +145,8 @@ body {
     background: #fff;
     mix-blend-mode: multiply;
     position: relative;
+    font: italic bold 30px Georgia, Serif;
+    text-shadow: -4px 2px 0 rgb(98, 233, 243), -3px 1px 0
 }
 
 #Logo:before {
@@ -152,7 +154,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgb(98, 233, 243), rgb(86, 70, 233));
+    background: linear-gradient(to right, rgb(98, 233, 243,.5), rgb(86, 70, 233,.8));
     mix-blend-mode: screen;
     position: absolute;
     top: 0;
@@ -172,16 +174,15 @@ body {
     text-decoration: none;
     background-color: #0B82F2;
     border-radius: 0.5em;
-    padding: 5px;
     color: #fff;
     size: 20px;
     margin: 3px;
 }
 
-#btn-login:hover {
-    transform: scale(1.1);
-    background-color: rgba(66, 183, 42, 1);
+#btn-login{
+    background-color: rgba(0, 0, 0, .0);
 }
+
 
 #btn-conocenos:hover{
     transform: scale(1.1);
@@ -202,8 +203,12 @@ body {
     transform: scale(1.1);
     background-color: rgba(66, 183, 42, 1);
 }
+#btn-politica:hover {
+    transform: scale(1.1);
+    background-color: rgba(66, 183, 42, 1);
+}
 
-#btn-login:hover {
+#btn-terminos:hover {
     transform: scale(1.1);
     background-color: rgba(66, 183, 42, 1);
 }
@@ -223,19 +228,19 @@ a:link{
 #Front-page {
     width: 100%;
     height: 600px;
-    /*background-image: url("Fondo.png");
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size:contain;*/
+    display: flex;
+    align-items: center;
+    
 }
 
 .fpwrap-general{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 600px;
-    *float: right;
-    width: 45%;
+    width: 50%;
     text-align: center;
-    margin: 1px;
+    
 }
 #fpwrap {
     position: relative;
@@ -259,21 +264,10 @@ a:link{
     margin: 1px;
 }
 
-#fp-pagina {
-    position:relative;
-    display: flex;    
-    align-items: center;
-    height: 600px;
-    float: right;
-    width: 45%;
-    text-align: center;
-    margin: 1px;
-}
-
 #front-image {
-    display: inline-block;
-    width: 45%;
-    height: auto;
+    display: block;
+    width: 50%;
+    height: 600px;
 }
 
 #policies {
@@ -288,7 +282,6 @@ a:link{
     height: 50px;
 }
 img {
-    width: 80%;
     height: 600px;
-    margin-left: 100px;
+    
 }
