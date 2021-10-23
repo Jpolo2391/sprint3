@@ -146,7 +146,7 @@ body {
     mix-blend-mode: multiply;
     position: relative;
     font: italic bold 30px Georgia, Serif;
-    text-shadow: -4px 2px 0 rgb(98, 233, 243), -3px 1px 0
+    text-shadow: -4px 2px 0 rgb(98, 233, 243), -3px 1px 0;
 }
 
 #Logo:before {
